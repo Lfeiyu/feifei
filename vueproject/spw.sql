@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50719
 File Encoding         : 65001
 
-Date: 2018-01-30 19:21:40
+Date: 2018-01-31 16:26:38
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -25,7 +25,7 @@ CREATE TABLE `car` (
   `goodsid` varchar(200) DEFAULT NULL COMMENT '商品id',
   `date` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=41 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=42 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of car
@@ -49,7 +49,7 @@ INSERT INTO `car` VALUES ('15', '22', '[{\"gid\":\"22\",\"qty\":\"1\"}]', '2018-
 INSERT INTO `car` VALUES ('16', '7', '[{\"gid\":\"7\",\"qty\":\"1\"}]', '2018-01-27 18:44:09');
 INSERT INTO `car` VALUES ('17', '9', '[{\"gid\":\"9\",\"qty\":\"1\"}]', '2018-01-27 18:53:52');
 INSERT INTO `car` VALUES ('19', '7', '[{\"gid\":\"7\",\"qty\":\"1\"}]', '2018-01-29 12:02:51');
-INSERT INTO `car` VALUES ('20', '37', '[{\"gid\":\"37\",\"qty\":\"1\"}]', '2018-01-29 12:03:27');
+INSERT INTO `car` VALUES ('20', '37', '[{\"gid\":\"37\",\"qty\":\"1\"},{\"gid\":\"6\",\"qty\":\"1\"},{\"gid\":\"8\",\"qty\":\"1\"}]', '2018-01-31 16:23:29');
 INSERT INTO `car` VALUES ('21', '79', '[{\"gid\":\"79\",\"qty\":\"1\"}]', '2018-01-29 12:03:43');
 INSERT INTO `car` VALUES ('22', '39', '[{\"gid\":\"39\",\"qty\":\"1\"}]', '2018-01-29 12:04:29');
 INSERT INTO `car` VALUES ('23', '9', '[{\"gid\":\"9\",\"qty\":\"1\"}]', '2018-01-29 12:05:53');
@@ -59,6 +59,7 @@ INSERT INTO `car` VALUES ('26', '7', '[{\"gid\":\"7\",\"qty\":\"1\"}]', '2018-01
 INSERT INTO `car` VALUES ('27', '9', '[{\"gid\":\"9\",\"qty\":\"1\"}]', '2018-01-29 12:25:27');
 INSERT INTO `car` VALUES ('28', '11', '[{\"gid\":\"11\",\"qty\":\"1\"}]', '2018-01-29 12:27:11');
 INSERT INTO `car` VALUES ('29', '11', '[{\"gid\":\"12\",\"qty\":\"1\"}]', '2018-01-29 12:30:49');
+INSERT INTO `car` VALUES ('41', '142', '[{\"gid\":\"6\",\"qty\":\"1\"}]', '2018-01-31 16:06:57');
 
 -- ----------------------------
 -- Table structure for comment
@@ -176,7 +177,6 @@ INSERT INTO `goods` VALUES ('77', 'FENDI', '男士个性休闲外衣', 'src/asse
 INSERT INTO `goods` VALUES ('79', 'TOPSHOP', '舒适保暖上衣', 'src/assets/imgs/children/g2.jpg', '249.00', '180.00', '黑色', '1', '1000', 's', '儿童', '200', '2018-01-19 21:37:20');
 INSERT INTO `goods` VALUES ('80', 'KENZO', '儿童服饰套装', 'src/assets/imgs/children/g3.jpg', '199.00', '180.00', '黑色', '1', '1000', 's', '儿童', '200', '2018-01-19 21:37:24');
 INSERT INTO `goods` VALUES ('81', 'FENDI', '舒适保暖上衣', 'src/assets/imgs/children/g4.jpg', '199.00', '180.00', '黑色', '1', '1000', 's', '儿童', '200', '2018-01-19 21:37:31');
-INSERT INTO `goods` VALUES ('142', 'MO&CO', '花花虎', null, '11.00', '11.00', '白色', '11', null, 'L', '女士', '11', '2018/1/27 下午6:20:57');
 INSERT INTO `goods` VALUES ('83', 'JIMMY CHOO', '舒适保暖上衣', 'src/assets/imgs/children/g6.jpg', '199.00', '150.00', '黑色', '1', '1000', 's', '儿童', '200', '2018-01-19 21:37:41');
 INSERT INTO `goods` VALUES ('84', 'MOOSE KNUCKLES', '儿童服饰套装', 'src/assets/imgs/children/g7.jpg', '249.00', '150.00', '黑色', '1', '1000', 's', '儿童', '200', '2018-01-19 21:37:46');
 INSERT INTO `goods` VALUES ('85', 'STUART WEITZMAN', '舒适保暖上衣', 'src/assets/imgs/children/g8.jpg', '199.00', '150.00', '黑色', '1', '1000', 's', '儿童', '200', '2018-01-19 21:37:53');
@@ -212,9 +212,6 @@ INSERT INTO `goods` VALUES ('114', 'MO&CO', '儿童服饰套装', 'src/assets/im
 INSERT INTO `goods` VALUES ('115', 'TOPSHOP', '舒适保暖上衣', 'src/assets/imgs/children/g38.jpg', '250.00', '180.00', '蓝色', '1', '1000', 'l', '儿童', '200', '2018-01-19 21:40:07');
 INSERT INTO `goods` VALUES ('116', 'KENZO', '儿童服饰套装', 'src/assets/imgs/children/g39.jpg', '250.00', '180.00', '蓝色', '1', '1000', 'l', '儿童', '200', '2018-01-19 21:40:09');
 INSERT INTO `goods` VALUES ('117', 'FENDI', '舒适保暖上衣', 'src/assets/imgs/children/g40.jpg', '249.00', '180.00', '蓝色', '1', '1000', 'l', '儿童', '200', '2018-01-19 21:40:17');
-INSERT INTO `goods` VALUES ('141', 'MO&CO', 'huhuhuuuhuhuhuhuhuhuhuhuhuhuhuhuhuhuhuhuhuh', null, '11.00', '1111.00', '白色', '111', null, 'L', '女士', '111', '2018/1/1 上午1:01:27');
-INSERT INTO `goods` VALUES ('138', 'TOPSHOP', '221212', null, '21212.00', '21212.00', '', '21212', null, 's', '男士', '2121', '2018/1/26 下午6:05:51');
-INSERT INTO `goods` VALUES ('140', 'MO&CO', 'udsudhdsshdis', null, '11.00', '1111.00', '白色', '111', null, 'L', '女士', '111', '2018/1/1 上午1:01:27');
 
 -- ----------------------------
 -- Table structure for htuser
@@ -277,7 +274,7 @@ CREATE TABLE `orders` (
   `goodsid` varchar(255) DEFAULT NULL COMMENT '订单内商品id',
   `date` varchar(255) DEFAULT NULL COMMENT '提交订单的时间',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=102 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=104 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of orders
@@ -299,6 +296,8 @@ INSERT INTO `orders` VALUES ('17', '8', '0', '668', '[{\"gid\":67,\"qty\":5},{\"
 INSERT INTO `orders` VALUES ('18', '8', '0', '668', '[{\"gid\":67,\"qty\":5},{\"gid\":66,\"qty\":1}]', '2018/1/22 下午10:53:25');
 INSERT INTO `orders` VALUES ('19', '7', '0', '99', '[{\"gid\":67,\"qty\":5},{\"gid\":66,\"qty\":1}]', '2018/1/22 下午10:54:51');
 INSERT INTO `orders` VALUES ('1', '1', '0', '3000', '[{\"gid\":12,\"qty\":5},{\"gid\":88,\"qty\":1}]', '2018/1/22 下午10:35:32');
+INSERT INTO `orders` VALUES ('103', '37', '0', '448', '[{\"gid\":6,\"qty\":1},{\"gid\":8,\"qty\":1}]', '2018-1-31 16:10:46');
+INSERT INTO `orders` VALUES ('102', '142', '0', '199', '[{\"gid\":6,\"qty\":1}]', '2018-1-31 16:06:38');
 INSERT INTO `orders` VALUES ('100', '33', '0', '249', '[{\"gid\":8,\"qty\":1}]', '2018-1-30 19:19:32');
 INSERT INTO `orders` VALUES ('98', '33', '0', '199', '[{\"gid\":67,\"qty\":5},{\"gid\":66,\"qty\":1}]', '2018/1/22 下午10:35:32');
 

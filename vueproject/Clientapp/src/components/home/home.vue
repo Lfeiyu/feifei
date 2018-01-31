@@ -259,7 +259,7 @@
             },
             GotoDetails:function(id){
                 console.log(id);
-                sessionStorage.setItem('id', id);        
+                sessionStorage.setItem('goodId', id);        
                 this.$router.push({ name:'details',params:{goodId:id}})
             }
 
