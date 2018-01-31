@@ -1,0 +1,73 @@
+html,body{
+    height:100%;
+}
+#app{
+    height:100%;
+}
+.reg{
+    height:100%;
+    background-image:url(../../assets/time1.jpg);
+    margin:0 auto;
+    position:relative;
+    .form-horizontal{
+        .form-group{
+            margin-bottom:10px;
+        }
+        h3{
+            text-align:center;
+            line-height:40px;
+            font-size:20px;
+            color:#ccc;
+        }
+        label{
+            color:#ccc;
+            margin-left:0;
+
+        }
+        .btn-reg{
+            margin-right:250px;
+        }
+        .btn{
+            background:#ccc;
+        }
+        .position{
+            font-size:14px;
+            color:#fff;
+            padding-left:40px;
+            >label{
+                padding-left:50px;
+                &:nth-child(2){
+                    padding-left:200px;
+                }
+            }
+        }
+        .user,.pass{
+            height:20px;
+            line-height:20px;
+            color:red;
+            padding-left:110px;
+            font-size:14px;
+            margin-bottom:10px;
+        }
+        width:600px;
+        background: rgba(5, 57, 104, 0.5);
+        padding:20px 30px;
+        position:absolute;
+        left:50%;
+        top:50%;
+        transform:translate(-50%,-50%);
+    }
+    .col-sm-10{
+        position:relative;
+        >i{
+            position:absolute;
+            left:30px;
+            top:50%;
+            color:#ccc;
+            transform:translate(-50%,-50%)
+        }
+        >input{
+            padding-left:30px;
+        }
+    }
+}

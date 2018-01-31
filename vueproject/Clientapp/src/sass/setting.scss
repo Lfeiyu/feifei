@@ -1,0 +1,14 @@
+#setting{
+    height:100%;display:flex;flex-direction:column;
+    .setting_c{
+        height: 16.0rem;
+        flex:1;background:#f6f6f6;position:relative;
+        li{padding:0 0.32rem;background:white;margin-top:0.266667rem;
+            a{
+                display:block;font-size:0.373333rem;color:#444;line-height:1.066667rem;
+                i{float:right;line-height:1.066667rem;}
+            }
+        }
+        button{width:90%;height:1.12rem;background:#0700c5;color:white;font-size:0.48rem;position:absolute;left:5%;bottom:4.0rem;}
+    }
+}

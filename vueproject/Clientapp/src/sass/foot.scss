@@ -1,0 +1,15 @@
+#foot{
+    display:flex;height:1.333333rem;background: #fff;
+    &>div{float:left;flex:1;
+        a{display:block;font-size:0.32rem;display:flex;flex-direction:column;text-align:center;padding-top:0.186667rem;color:#CBCBCB;
+            i{font-size:0.64rem;}
+        }
+        &:nth-child(3){
+            a{
+               position:relative;
+               span{display:block;width:1.066667rem;height:1.066667rem;background:#000000;border-radius:50%;color:white;font-size:0.24rem;line-height:1.066667rem;position:absolute;left:50%;top:0.133333rem;transform:translate(-50%,0);} 
+           }
+        }
+        a.active{color:#000000;}
+    }
+}

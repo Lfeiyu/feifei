@@ -1,0 +1,39 @@
+/* 
+* @Author: Marte
+* @Date:   2018-01-22 16:37:31
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-01-19 09:53:51
+*/
+.goods_class{
+    position:relative;
+
+    height:510px;
+    box-shadow: 3px 3px 3px 3px #bbb;
+    thead{
+        tr{
+            th{
+                text-align:center;
+            }
+        }
+    }
+    tbody{
+        tr{
+            td{
+                text-align:center;
+                &:last-child{
+                    span{
+                        margin-right:3px;
+                        padding:4px 7px;
+                        background:#58bc58;
+                        color:#fff;
+                    }
+                }
+            };
+        }
+    }
+    .page{
+        position:absolute;
+        right:80px;
+        bottom:20px;
+    }
+}

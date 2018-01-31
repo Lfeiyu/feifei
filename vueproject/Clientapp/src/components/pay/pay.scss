@@ -1,0 +1,23 @@
+.pay{
+	// margin-top:2.666667rem;
+	padding-top: 1.333333rem;
+	h2{
+		font-size:0.426667rem;
+		text-align: center;
+		color:#000;
+		span{
+			font-size: 0.32rem;
+			color:red;
+			// margin: 0 0.266667rem;
+		}
+	}
+	li{
+		height: 1.333333rem;
+		line-height: 1.333333rem;
+		text-align: center;
+		font-size: 0.64rem;
+		border:1px solid #ccc;
+		margin: 0.533333rem 1.333333rem;
+		box-shadow: 5px 10px 5px #ccc;
+	}
+}

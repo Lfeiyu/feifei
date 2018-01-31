@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>IconFont</title>
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="iconfont.css">
+</head>
+<body>
+    <div class="main markdown">
+        <h1>IconFont 图标</h1>
+        <ul class="icon_lists clear">
+            
+                <li>
+                <i class="icon iconfont el-icon-shangpin-code"></i>
+                    <div class="name">验证码</div>
+                    <div class="fontclass">.el-icon-shangpin-code</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont el-icon-shangpin-yingyuanxinxiertongpiao"></i>
+                    <div class="name">影院信息-儿童票</div>
+                    <div class="fontclass">.el-icon-shangpin-yingyuanxinxiertongpiao</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont el-icon-shangpin-dizhi"></i>
+                    <div class="name">地址</div>
+                    <div class="fontclass">.el-icon-shangpin-dizhi</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont el-icon-shangpin-83"></i>
+                    <div class="name">地址</div>
+                    <div class="fontclass">.el-icon-shangpin-83</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont el-icon-shangpin-buxianshimima"></i>
+                    <div class="name">不显示密码</div>
+                    <div class="fontclass">.el-icon-shangpin-buxianshimima</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont el-icon-shangpin-mima"></i>
+                    <div class="name">密码</div>
+                    <div class="fontclass">.el-icon-shangpin-mima</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont el-icon-shangpin-xingbie-nv"></i>
+                    <div class="name">性别-女</div>
+                    <div class="fontclass">.el-icon-shangpin-xingbie-nv</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont el-icon-shangpin-xingbie-nan"></i>
+                    <div class="name">性别-男</div>
+                    <div class="fontclass">.el-icon-shangpin-xingbie-nan</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont el-icon-shangpin-pinpai"></i>
+                    <div class="name">品牌+</div>
+                    <div class="fontclass">.el-icon-shangpin-pinpai</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont el-icon-shangpin-collection"></i>
+                    <div class="name">collection</div>
+                    <div class="fontclass">.el-icon-shangpin-collection</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont el-icon-shangpin-coupons"></i>
+                    <div class="name">coupons</div>
+                    <div class="fontclass">.el-icon-shangpin-coupons</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont el-icon-shangpin-mail"></i>
+                    <div class="name">mail</div>
+                    <div class="fontclass">.el-icon-shangpin-mail</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont el-icon-shangpin-message"></i>
+                    <div class="name">message</div>
+                    <div class="fontclass">.el-icon-shangpin-message</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont el-icon-shangpin-other"></i>
+                    <div class="name">other</div>
+                    <div class="fontclass">.el-icon-shangpin-other</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont el-icon-shangpin-setup"></i>
+                    <div class="name">setup</div>
+                    <div class="fontclass">.el-icon-shangpin-setup</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont el-icon-shangpin-star"></i>
+                    <div class="name">星</div>
+                    <div class="fontclass">.el-icon-shangpin-star</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont el-icon-shangpin-wode"></i>
+                    <div class="name">我的</div>
+                    <div class="fontclass">.el-icon-shangpin-wode</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont el-icon-shangpin-shouye"></i>
+                    <div class="name">首页</div>
+                    <div class="fontclass">.el-icon-shangpin-shouye</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont el-icon-shangpin-fenlei"></i>
+                    <div class="name">分类</div>
+                    <div class="fontclass">.el-icon-shangpin-fenlei</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont el-icon-shangpin-sousuo"></i>
+                    <div class="name">搜索</div>
+                    <div class="fontclass">.el-icon-shangpin-sousuo</div>
+                </li>
+            
+        </ul>
+
+        <h2 id="font-class-">font-class引用</h2>
+        <hr>
+
+        <p>font-class是unicode使用方式的一种变种，主要是解决unicode书写不直观，语意不明确的问题。</p>
+        <p>与unicode使用方式相比，具有如下特点：</p>
+        <ul>
+        <li>兼容性良好，支持ie8+，及所有现代浏览器。</li>
+        <li>相比于unicode语意明确，书写更直观。可以很容易分辨这个icon是什么。</li>
+        <li>因为使用class来定义图标，所以当要替换图标时，只需要修改class里面的unicode引用。</li>
+        <li>不过因为本质上还是使用的字体，所以多色图标还是不支持的。</li>
+        </ul>
+        <p>使用步骤如下：</p>
+        <h3 id="-fontclass-">第一步：引入项目下面生成的fontclass代码：</h3>
+
+
+        <pre><code class="lang-js hljs javascript"><span class="hljs-comment">&lt;link rel="stylesheet" type="text/css" href="./iconfont.css"&gt;</span></code></pre>
+        <h3 id="-">第二步：挑选相应图标并获取类名，应用于页面：</h3>
+        <pre><code class="lang-css hljs">&lt;<span class="hljs-selector-tag">i</span> <span class="hljs-selector-tag">class</span>="<span class="hljs-selector-tag">iconfont</span> <span class="hljs-selector-tag">el-icon-shangpin-xxx</span>"&gt;&lt;/<span class="hljs-selector-tag">i</span>&gt;</code></pre>
+        <blockquote>
+        <p>"iconfont"是你项目下的font-family。可以通过编辑项目查看，默认是"iconfont"。</p>
+        </blockquote>
+    </div>
+</body>
+</html>

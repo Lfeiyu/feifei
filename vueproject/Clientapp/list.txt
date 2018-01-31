@@ -1,0 +1,24 @@
+ <div class="swiper-container1">
+                        <div class="swiper-wrapper">
+                            <ul>
+                                <li v-for="(item,index) in dataset" v-if="index>12&&index<16":id="item.id" @click="GotoDetails(item.id)">
+                                    <a href="">
+                                        <img :src="item.imgurl" />
+                                        <p class="p1">{{item.brand}}</p>
+                                        <p class="p2">гд{{item.price}}</p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li v-for="(item,index) in dataset" v-if="index>4&&index<8":id="item.id" @click="GotoDetails(item.id)">
+                                    <a href="">
+                                        <img :src="item.imgurl" />
+                                        <p class="p1">{{item.brand}}</p>
+                                        <p class="p2">гд{{item.price}}</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="swiper-pagination swiper-pagination-white"></div>
+                    </div>
+                   

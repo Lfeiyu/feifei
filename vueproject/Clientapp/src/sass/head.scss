@@ -1,0 +1,11 @@
+#Head{line-height:1.173333rem;font-size:0.533333rem;color:#111;border-bottom:1px solid #999;height:1.173333rem;background: #fff;
+    span{position:absolute;left:50%;top:0;transform:translate(-50%,0);}
+    a{color:#111;}
+    i{margin:0 0.20rem;font-size:0.746667rem;line-height:1.173333rem;}
+    .head_l{float:left;}
+    .head_r{float:right;
+        a:last-child{position:relative;
+            i:last-child{font-size:0.32rem;position:absolute;right:0.266667rem;top:-0.251667rem;}
+        }
+    }
+}

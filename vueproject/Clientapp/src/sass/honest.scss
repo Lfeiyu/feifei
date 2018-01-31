@@ -1,0 +1,15 @@
+#honest{
+    display:flex;
+    flex-direction:column;
+    height:100%;
+    header{
+        line-height:1.226667rem;color:#111;padding:0 0.266667rem;border-bottom:1px solid #999;
+        a{float:left;color:#111;font-size:0.533333rem;
+            i{line-height:1.226667rem;}
+        }
+        h1{text-align:center;font-size:0.533333rem;}
+    }
+    .honest_c{flex:1;overflow-y:scroll;
+        img{width:100%;}
+    }
+}

@@ -1,0 +1,27 @@
+
+.categroys{
+	display:flex;
+	flex-direction:column;
+	height:100%;
+	
+	.nav_title{
+		height: 1.2rem;
+		border-bottom: 1px solid #ccc;
+		display: flex;
+		justify-content:space-around;
+		background: #fff;
+		li{
+			flex:1;
+			font-size: 0.3734rem;
+			text-align: center;
+			margin-top: 0;
+			a{
+				color:#000;
+			}
+		}
+	}
+	.b_content{
+		flex:1;
+		overflow-x:hidden;
+	}
+}

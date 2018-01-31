@@ -1,0 +1,55 @@
+.allGoods{
+    margin-top: 20px;
+    padding:20px;
+    box-shadow: 3px 3px 3px 3px #bbb;
+    height:520px;
+    #add_good{
+        .el-form{
+                .cc{
+                    width:50%;
+                    float:left;
+                   &:nth-child(10),&:nth-child(11){
+                        width:100%;
+                    }
+                    &:nth-child(11){
+                        padding-left:30%;
+                        padding-top:10px;
+
+                    }
+                }
+        }
+    }
+}
+.brand{
+}
+.search{
+    width: 100%;
+    margin-top: 20px;
+}
+.goods_input{
+    width: 28%;
+    margin-right: 10px;
+}
+.goods_table{
+    margin-top: 15px;
+}
+.input{
+    margin-top: 8px;
+    margin-left: 10px;
+    width: 40%;
+}
+label{
+    margin-left: 20px;
+}
+.el-upload__input{
+    display: none !important;
+}
+.upload{
+    margin-top: 10px;
+}
+.shuru{
+    width:60%;
+}
+
+
+
